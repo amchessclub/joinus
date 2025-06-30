@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Join AM Chess Club</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #f9fafb;
+    margin: 0; padding: 2rem;
+    display: flex; justify-content: center; align-items: center;
+    min-height: 100vh;
+  }
+  .container {
+    background: white;
+    padding: 2rem 3rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    max-width: 400px;
+    width: 100%;
+  }
+  h1 {
+    margin-bottom: 1.5rem;
+    color: #1e3a8a;
+    text-align: center;
+  }
+  label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+  }
+  input, textarea {
+    width: 100%;
+    margin-top: 0.4rem;
+    padding: 0.6rem 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+  textarea {
+    min-height: 100px;
+  }
+  button {
+    margin-top: 1.8rem;
+    width: 100%;
+    background: #1e3a8a;
+    color: white;
+    border: none;
+    padding: 0.9rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  button:hover {
+    background: #133374;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Join AM Chess Club</h1>
+  <form action="https://formspree.io/f/mpwrbjgq" method="POST">
+    <!-- Disable captcha to avoid extra steps -->
+   
+
+    <input type="hidden" name="_captcha" value="false" />
+
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" required />
+
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" required />
+
+    <label for="message">Why do you want to join?</label>
+    <textarea id="message" name="message" placeholder="Tell us a bit about yourself..." required></textarea>
+
+    <button type="submit">Join Now</button>
+  </form>
+</div>
+
+</body>
+</html>
+
